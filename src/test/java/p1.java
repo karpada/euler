@@ -5,10 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class p1 {
-
-	/**
-	 * @param args
-	 */
 	@Test
 	public void main() {
 		int sum = 0;

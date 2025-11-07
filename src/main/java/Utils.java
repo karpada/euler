@@ -147,4 +147,14 @@ public class Utils {
 		}
 		return fiboList.get(n);
 	}
+
+	public static ArrayList<Integer> getDigits(int x) {
+		ArrayList<Integer> digits = new ArrayList<>();
+		while (x > 0) {
+			digits.add(x % 10);
+			x /= 10;
+		}
+		return digits;
+	}
+
 }
