@@ -157,4 +157,14 @@ public class Utils {
         return digits;
     }
 
+    public static boolean isPandigital(String s, int required) {
+        // require 1-9 == 0b1111111110
+        // require 0-9 == 0b1111111111
+        int charField = 0;
+        for (int i = 0; i < s.length(); i++) {
+            charField |= 1 << (s.charAt(i) - '0');
+        }
+        return (charField & required) == required;
+    }
+
 }
