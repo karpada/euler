@@ -8,8 +8,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class p102 {
-	@Test
-	public void main() {
+    @Test
+    public void main() {
         long origin_count = 0;
         for (String l: Utils.fileLines("src/test/resources/0102_triangles.txt")) {
             long[] coords = Arrays.stream(l.split(",")).mapToLong(Long::parseLong).toArray();
@@ -23,8 +23,8 @@ public class p102 {
                 origin_count++;
             }
         }
-		assertEquals(228, origin_count);
-	}
+        assertEquals(228, origin_count);
+    }
 
     private static double getAngle(double b, double a) {
         return Math.abs((b - a + 3 * Math.PI) % (2 * Math.PI) - Math.PI);
