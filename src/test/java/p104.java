@@ -15,7 +15,6 @@ public class p104 {
         BigInteger a = BigInteger.ONE;
         BigInteger b = BigInteger.ONE;
 
-
         for (i = 3; i < 10_000_000; i++) {
             BigInteger c = a.add(b);
             a = b;
